@@ -13,5 +13,6 @@ object p50 extends App {
 
 
   val l = List(("a", 45), ("b", 13), ("c", 12), ("d", 16), ("e", 9), ("f", 5))
-  
+
+
 }
