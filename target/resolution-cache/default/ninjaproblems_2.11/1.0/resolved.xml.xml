@@ -4,7 +4,7 @@
 		module="ninjaproblems_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160131200312"
+		publication="20160216211834"
 	>
 		<description>
 		NinjaProblems
@@ -32,5 +32,7 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.scala-lang.modules" name="scala-parser-combinators_2.11" rev="1.0.4" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-json_2.11" rev="2.3.4" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

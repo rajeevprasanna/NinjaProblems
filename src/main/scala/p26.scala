@@ -39,7 +39,7 @@ object p26 extends App {
       case Nil => res
       case h::tail => _combinations(tail, res:::res.map(x => x:::List(h)))
     }
-    _combinations(list, List(List())) filter(_.size == c)
+    _combinations(list, List(List())) filter(_.size == count)
   }
 
   val res12 = combinations12(c, l)

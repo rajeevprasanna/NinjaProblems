@@ -22,7 +22,7 @@
 [debug] == resolving dependencies for default#ninjaproblems-build;0.1-SNAPSHOT [provided]
 [debug] == resolving dependencies default#ninjaproblems-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@cf37d43
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f26eac4
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
 [debug] 	[2.10.4] org.scala-lang#scala-library;2.10.4
@@ -1775,7 +1775,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 341ms :: artifacts dl 16ms
+[debug] :: resolution report :: resolve 739ms :: artifacts dl 20ms
 [debug] 	report for default#ninjaproblems-build;0.1-SNAPSHOT compile produced in /Users/rajeevprasanna/sprayTutorial/NinjaProblems/project/target/resolution-cache/reports/default-ninjaproblems-build-compile.xml
 [debug] 	report for default#ninjaproblems-build;0.1-SNAPSHOT runtime produced in /Users/rajeevprasanna/sprayTutorial/NinjaProblems/project/target/resolution-cache/reports/default-ninjaproblems-build-runtime.xml
 [debug] 	report for default#ninjaproblems-build;0.1-SNAPSHOT test produced in /Users/rajeevprasanna/sprayTutorial/NinjaProblems/project/target/resolution-cache/reports/default-ninjaproblems-build-test.xml
@@ -1789,5 +1789,5 @@
 [debug] 	report for default#ninjaproblems-build;0.1-SNAPSHOT docs produced in /Users/rajeevprasanna/sprayTutorial/NinjaProblems/project/target/resolution-cache/reports/default-ninjaproblems-build-docs.xml
 [debug] 	report for default#ninjaproblems-build;0.1-SNAPSHOT pom produced in /Users/rajeevprasanna/sprayTutorial/NinjaProblems/project/target/resolution-cache/reports/default-ninjaproblems-build-pom.xml
 [debug] 	report for default#ninjaproblems-build;0.1-SNAPSHOT scala-tool produced in /Users/rajeevprasanna/sprayTutorial/NinjaProblems/project/target/resolution-cache/reports/default-ninjaproblems-build-scala-tool.xml
-[debug] 	resolve done (341ms resolve - 16ms download)
+[debug] 	resolve done (739ms resolve - 20ms download)
 [info] Done updating.
