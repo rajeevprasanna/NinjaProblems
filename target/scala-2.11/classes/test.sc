@@ -2,8 +2,31 @@
 
 
 
-val res = List(3,3,5,7,7).groupBy(x => x)
-//o/p res: scala.collection.immutable.Map[Int,List[Int]] = Map(5 -> List(5), 7 -> List(7, 7), 3 -> List(3, 3))
+import scala.annotation.tailrec
 
-val res1 = List(3,3,5,7,7).groupBy(x => x).map(x => (x._2.size, x._1))
-//o:p res1: scala.collection.immutable.Map[Int,Int] = Map(1 -> 5, 2 -> 3)
+val l = List("Aldo", "Beat", "Carla", "David", "Evi", "Flip", "Gary", "Hugo", "Ida")
+
+def combinations[A](count:Int, list:List[A]):List[List[A]] = {
+  @tailrec
+  def _combinations(l:List[A], res:List[List[A]]):List[List[A]] = l match {
+    case Nil => res
+    case h::tail => _combinations(tail, res:::res.map(x => x:::List(h)))
+  }
+  _combinations(list, List(List())) filter(_.size == count)
+}
+
+def disjointCombinations[A](ls:List[A]):List[List[List[A]]] =
+  for{
+      a <- combinations(2, ls)
+      noA  = ls diff a
+      b <- combinations(3, noA)
+  } yield List(a, b, noA diff b)
+
+disjointCombinations(l)
+
+def group[A](ns: List[Int], ls: List[A]): List[List[List[A]]] = ns match {
+  case Nil     => List(Nil)
+  case n :: ns => combinations(n, ls) flatMap { c =>
+    group(ns, ls diff c) map {c :: _}
+  }
+}
